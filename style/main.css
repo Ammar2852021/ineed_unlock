@@ -16,6 +16,8 @@ font-family: sans-serif;
 
 body{
     overflow-x: hidden;
+    font-size: 80.5%;
+
 
 }
 
@@ -240,6 +242,7 @@ nav {
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
+        background-size: contain;
     }
     .block_text {
         margin: 20px;
@@ -313,6 +316,7 @@ nav {
         border-radius: 30px;
         background: rgb(4, 4, 36);
         color: white;
+        font-size: xx-small;
       }
       
       .button_Continue svg {
@@ -725,4 +729,23 @@ right: 2em;
 background: #050b30;
 color: white;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    .hidden {
+        padding: 10px;
+    }
 }
