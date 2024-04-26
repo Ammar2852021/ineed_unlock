@@ -4,10 +4,19 @@
     box-sizing: border-box;
 text-transform: capitalize;
 font-family: sans-serif;
-
-
-
 }
+
+
+
+:root{--color-sec:#050b30;
+    --color-all_text:#ff5757;
+  
+}
+
+.all_text{
+    color: var(--color-all_text);
+}
+    
 
 .flex{
     display: flex;
@@ -58,18 +67,179 @@ nav {
     }
 
 
+    #btn-message {
+        --text-color: #000;
+        --bg-color-sup: #d2d2d2;
+        --bg-color: #f4f4f4;
+        --bg-hover-color: #ffffff;
+        --online-status: #00da00;
+        --font-size: 16px;
+        --btn-transition: all 0.2s ease-out;
+      }
+      
+      .button-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 400 var(--font-size) Helvetica Neue, sans-serif;
+        background-color: var(--bg-color);
+        border-radius: 68px;
+        cursor: pointer;
+        padding: 6px 10px 6px 6px;
+        height: 40px;
+        border: 0;
+        overflow: hidden;
+        position: relative;
+        transition: var(--btn-transition);
+      }
+      
+  
+      
+      .button-message:active {
+        transform: scale(0.99);
+      }
+      
+      .content-avatar {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        transition: var(--btn-transition);
+        position: relative;
+      }
+      
+     
+      .avatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--bg-color-sup);
+      }
+      
+      .user-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .status-user {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        right: 1px;
+        bottom: 1px;
+        border-radius: 50%;
+        outline: solid 2px var(--bg-color);
+        background-color: var(--online-status);
+        transition: var(--btn-transition);
+        animation: active-status 2s ease-in-out infinite;
+      }
+      
 
-
-
-
-
-
-
-    .but_p{
+      .notice-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 8px;
+        text-align: initial;
+        color: var(--text-color);
+      }
+      
+      .username {
+        letter-spacing: -6px;
+        height: 0;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: var(--btn-transition);
+      }
+      
+      .user-id {
+        font-size: 12px;
+        letter-spacing: -6px;
+        height: 0;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: var(--btn-transition);
+      }
+      
+      .lable-message {
         display: flex;
         align-items: center;
-        gap: 10px;    color: #ff5757;
-    }
+        opacity: 1;
+        transform: scaleY(1);
+        transition: var(--btn-transition);
+      }
+      
+      .button-message:hover .username {
+        height: auto;
+        letter-spacing: normal;
+        opacity: 1;
+        transform: translateY(0);
+        transition: var(--btn-transition);
+      }
+      
+      .button-message:hover .user-id {
+        height: auto;
+        letter-spacing: normal;
+        opacity: 1;
+        transform: translateY(0);
+        transition: var(--btn-transition);
+      }
+      
+      .button-message:hover .lable-message {
+        transform: scaleY(0);
+        transition: var(--btn-transition);
+      }
+      
+      .lable-message, .username {
+        font-weight: 600;
+      }
+      
+      .number-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 8px;
+        font-size: 12px;
+        width: 16px;
+        height: 16px;
+        background-color: var(--bg-color-sup);
+        border-radius: 20px;
+      }
+      
+      /*==============================================*/
+      @keyframes active-status {
+        0% {
+          background-color: var(--online-status);
+        }
+      
+        33.33% {
+          background-color: #93e200;
+        }
+      
+        66.33% {
+          background-color: #93e200;
+        }
+      
+        100% {
+          background-color: var(--online-status);
+        }
+      }
+
+
+.list{
+  line-height: 1.5;
+list-style-position:unset;
+}
+
+
+    /* .but_p{
+        display: flex;
+        align-items: center;
+        gap: 10px;    
+    } */
 
 
     .but{
@@ -86,9 +256,8 @@ nav {
         overflow: hidden;
         background-color: var(--background-color) !important;
     
-        width: 100%;
         top: 10%;
-        padding: 10px;
+     
     }
     
     .header_nav li a {
@@ -213,13 +382,34 @@ nav {
     .hidden{
         overflow: hidden;
         position: relative;
-        margin-top: 8vh;
+        margin-top: 10vh;
         padding: 0 18%;
     }
+
+
+    a{
+      text-decoration: none;
+    }
+
+
+
+
+._icon{
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
     .home{
         display: grid;
         width: 100%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         align-items: center;
         overflow: hidden;
     }
@@ -238,7 +428,7 @@ nav {
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-image: url(https://images.ultfone.it/foto/xiaomi-account-2.jpg?w=724&h=558);
+        background-image: url(/ineed_unlock/img/img/1.png);
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
@@ -252,7 +442,6 @@ nav {
     .block_text p{
         margin: 10px 0;
         margin: 10px 0;
-    font-size: smaller;
     line-height: 1.5;
     }
 
@@ -270,11 +459,11 @@ nav {
 
 
     .red{
-        color: red;
+        color: #ff3836;
     }
 
     .green{
-        color: green;
+        color: #099f57;
 
     }
 .orange{
@@ -288,7 +477,7 @@ nav {
 
 
     .Line_red{
-        border-left:5px solid red ;
+        border-left:3px solid var(--color-all_text) ;
         padding-left: 10px;
     }
 
@@ -297,51 +486,69 @@ nav {
     gap: 10px;
 }
     .button_Continue {
-        max-width: 320px;
         display: flex;
-        padding: 0.5rem 1.4rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
+        padding: 5px ;
         font-weight: 700;
         text-align: center;
         vertical-align: middle;
         align-items: center;
         border-radius: 0.5rem;
-        border: 1px solid rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--color-sec);
         gap: 0.75rem;
         color: rgb(65, 63, 63);
         background-color: #fff;
         cursor: pointer;
         transition: all .6s ease;
         border-radius: 30px;
-        background: rgb(4, 4, 36);
+        background: var(--color-sec);
         color: white;
+        font-weight: normal;
         font-size: xx-small;
       }
       
       .button_Continue svg {
-        height: 24px;
+        height: 20px;
       }
       
       .button_Continue:hover {
         transform: scale(1.02);
       }
 /*  */
+.h2_titel{
+  font-size: xx-large;
+
+  color: var(--color-sec);
+}
+
+.Line_red img {
+float: right;}
+ul.ul_li {
+    list-style-position: inside;
+}
+
+
+ul.ul_li ::marker {
+  color: var(--color-all_text);
+}
+
 
 /*  */
 .playstore-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #000;
+    border: 2px solid var(--color-sec);
     border-radius: 10px;
     /* background-color: rgba(0, 0, 0, 1); */
-    padding: 0.625rem 1.5rem;
+    padding:  10px;
     text-align: center;
     color: black;
     outline: 0;
     transition: all .2s ease;
     text-decoration: none;
+  }
+  .img_di{
+    overflow: hidden;
   }
   
   .playstore-button:hover {
@@ -394,6 +601,22 @@ nav {
 
   /* color: var(--orange-yellow-crayola); */
 }
+
+
+
+
+
+
+.line{
+  width: 100%;
+  height: 30vh;
+  background: red;
+  background-image: url(/ineed_unlock/img/6.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 /*  */
     /*  Discount*/
@@ -726,7 +949,7 @@ right: 2em;
 
 
 .color_b{
-background: #050b30;
+background: var(--color-sec);
 color: white;
 
 }
@@ -740,7 +963,77 @@ color: white;
 
 
 
-
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color:#ff5757;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 100%;
+    color: white;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
 
 
 
@@ -748,4 +1041,23 @@ color: white;
     .hidden {
         padding: 10px;
     }
+}
+
+
+
+/*  */
+.g{
+  color: #0079ff;
+}
+
+.o{
+  color: #ff3131;
+}
+
+.O{
+  color: orange;
+}
+
+.l{
+  color: #099f57;
 }
