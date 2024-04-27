@@ -532,6 +532,12 @@ ul.ul_li ::marker {
 }
 
 
+.you{
+  display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /*  */
 .playstore-button {
     display: inline-flex;
