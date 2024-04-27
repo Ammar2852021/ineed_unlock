@@ -10,7 +10,12 @@ font-family: sans-serif;
 
 :root{--color-sec:#050b30;
     --color-all_text:#ff5757;
+    --color-link:#ff914d;
   
+}
+
+.llink{
+  color: var(--color-link);
 }
 
 .all_text{
@@ -145,6 +150,8 @@ nav {
 .list{
   line-height: 1.5;
 list-style-position:unset;
+display: flex;
+gap: 5px;
 }
 
 
@@ -393,10 +400,22 @@ list-style-position:unset;
 
 
 
+
+
     .Line_red{
         border-left:3px solid var(--color-all_text) ;
         padding-left: 10px;
+        font-size: x-large;
     }
+
+    p.you {
+      font-size: medium;
+  }
+
+  .bi-circle-fill{
+    color: white;
+  }
+
 
     /*  */
 .gap{
@@ -472,6 +491,7 @@ ul.ul_li ::marker {
   }
   .img_di{
     overflow: hidden;
+    width: 100%;
   }
   
   .playstore-button:hover {
@@ -1044,4 +1064,10 @@ header.header_nav {
   align-items: center;
   justify-content: right;
 }
+}
+
+
+.but{
+  background-color: white;
+padding: 5px;
 }
