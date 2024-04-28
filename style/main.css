@@ -1331,5 +1331,11 @@ display: block !important;
   flex-wrap: wrap;
   flex-direction: column;
 }
+body {
+  overflow-x: hidden;
+  font-size: 90.5%;
+
+
+}
 
 }
