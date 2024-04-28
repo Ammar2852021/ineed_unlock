@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Link your custom CSS -->
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
@@ -27,9 +29,26 @@
       <div class="loogo_link">
           <li> <a href="#Home_One"><div class="div"></div></a></li>
           <li> <a href="#Home_One">home</a></li>
-          <li> <a href="#Home_One">service price</a></li>
-        <li><a href="#">Products</a></li>
-          <li> <a href="#Home_One">lidrary tool</a></li>
+         <li>
+          <a href="#">
+            <select onchange="window.location=this.value;">
+              <option value="">Service Price</option>
+              <option value="https://google.com"> google</option>
+            </select>
+          </a>
+         </li>
+
+         <li>
+        <a href="#">
+          <select onchange="window.location=this.value;">
+            <option value="">lidrary tool</option>
+            <option value="https://google.com"> google</option>
+          </select>
+        </a>
+
+         </li>
+
+
           <li> <a href="#Home_One">tutorials</a></li>
 
       </div>
@@ -154,9 +173,73 @@
 
 
             <a class="playstore-button" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
-                  <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
-                </svg>
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                        }
+        
+                        .cls-2 {
+                            fill: #fff;
+                        }
+        
+                        .cls-3 {
+                            fill: url(#linear-gradient);
+                        }
+        
+                        .cls-4 {
+                            fill: url(#linear-gradient-2);
+                        }
+        
+                        .cls-5 {
+                            fill: url(#linear-gradient-3);
+                        }
+        
+                        .cls-6 {
+                            fill: url(#linear-gradient-4);
+                        }
+                        .svg{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    </style>
+                    <linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient" x1="9.58" x2="9.58" y1="17.71"
+                        y2="6.31">
+                        <stop offset="0" stop-color="#00e4ff" />
+                        <stop offset="0.99" stop-color="#0cf" />
+                    </linearGradient>
+                    <linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient-2" x1="13.03" x2="18.6" y1="11.87"
+                        y2="11.87">
+                        <stop offset="0.01" stop-color="#ffbc00" />
+                        <stop offset="1" stop-color="#ffe100" />
+                    </linearGradient>
+                    <linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient-3" x1="11.02" x2="11.02" y1="11.74"
+                        y2="5.4">
+                        <stop offset="0" stop-color="#00f055" />
+                        <stop offset="0.99" stop-color="#00e05a" />
+                    </linearGradient>
+                    <linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient-4" x1="11.26" x2="11.26" y1="18.6"
+                        y2="11.74">
+                        <stop offset="0.01" stop-color="#de1646" />
+                        <stop offset="1" stop-color="#ff2b43" />
+                    </linearGradient>
+                </defs>
+                <title />
+                <g data-name="Layer 2" id="Layer_2">
+                    <g data-name="Layer 3" id="Layer_3">
+                        <rect class="cls-1" height="24px" width="24px" />
+                        <path class="cls-2" d="M1,12C1,4,4,1,12,1S23,4,23,12,20,23,12,23,1,20,1,12" />
+                        <path class="cls-3" d="M13,11.74,6.59,18.12A1.53,1.53,0,0,1,6.12,17V7a1.53,1.53,0,0,1,.49-1.13Z" />
+                        <path class="cls-4"
+                            d="M18.6,12a1.57,1.57,0,0,1-.84,1.38l-1.83,1-2.27-2.08L13,11.74l2.41-2.39,2.32,1.27A1.57,1.57,0,0,1,18.6,12Z" />
+                        <path class="cls-5" d="M13,11.74,6.61,5.86a1.79,1.79,0,0,1,.3-.22,1.69,1.69,0,0,1,1.7,0l6.83,3.73Z" />
+                        <path class="cls-6"
+                            d="M15.93,14.39l-7.32,4a1.76,1.76,0,0,1-.83.21,1.61,1.61,0,0,1-.87-.24,1.91,1.91,0,0,1-.32-.24L13,11.74l.63.57Z" />
+                    </g>
+                </g>
+            </svg>
+        
                 <span class="texts">
                   <span class="text-1">GET IT ON</span>
                   <span class="text-2">Google Play</span>
@@ -189,7 +272,7 @@
   <div class="owl-carousel owl-theme">
     <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
     <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-    <div class="item "></div>
+    <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
   </div>
 </div>
 </section>
@@ -244,7 +327,7 @@
         <div class="block_text">
           <li class="list red flex"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
             <circle cx="8" cy="8" r="8"/>
-          </svg> Final Remove iCloud by Invoices.</li>
+          </svg> <p style="font-size: medium;">Final Remove iCloud by Invoices.</p></li>
 
             <h2> <span class="all_text">-</span> Supported all Devices for Apple <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
@@ -375,7 +458,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                         <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                       </svg>
-        <a href="#"  class="you llink">            فديوهات لشرح هذه الخدمات - باللغة العربية
+        <a href="#"  class="you llink ar">            فديوهات لشرح هذه الخدمات - باللغة العربية
 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -392,9 +475,10 @@
     </div>
     <div class="img_di">
       <div class="owl-carousel owl-theme">
-        <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-        <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-        <div class="item "></div>
+        <div class="item "><img src="/ineed_unlock/img/img/2.png" alt=""></div>
+        <div class="item "><img src="/ineed_unlock/img/img/2.png" alt=""></div>
+        <div class="item "><img src="/ineed_unlock/img/img/2.png" alt=""></div>
+
       </div>
     </div>
     </section>
@@ -416,9 +500,10 @@
     
       <div class="img_di">
         <div class="owl-carousel owl-theme">
-          <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-          <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-          <div class="item "></div>
+          <div class="item "><img src="/ineed_unlock/img/img/3.png" alt=""></div>
+          <div class="item "><img src="/ineed_unlock/img/img/3.png" alt=""></div>
+          <div class="item "><img src="/ineed_unlock/img/img/3.png" alt=""></div>
+
         </div>
       </div> 
       
@@ -465,8 +550,8 @@
        <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z"/>
      </svg></h2>
 
-<p class="list">   <span class="red">,,</span> Mi Account <span class="red">-</span> Huawei <span class="all_text">/</span> Honor  iD <span class="red">- </span> Samsung Account  </p>
-<p class="list"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+<p class="list flex_line">   <span class="red mark"><svg  style="fill: #ff3836;" xmlns="http://www.w3.org/2000/svg"  width="26" height="26" viewBox="0 0 48 48" ><path d="M12 34h6l4-8v-12h-12v12h6zm16 0h6l4-8v-12h-12v12h6z"/><path d="M0 0h48v48h-48z" fill="none"/></svg></span> Mi Account <span class="red">-</span> Huawei <span class="all_text">/</span> Honor  iD <span class="red">- </span> Samsung Account  </p>
+<p class="list  "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
 </svg><span class="red">  Service done </span> by Using <span class="red">:</span> Serial Number </p>
 
@@ -552,7 +637,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                         <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                       </svg>
-        <a href="#"  class="you llink">            فديوهات لشرح هذه الخدمات - باللغة العربية
+        <a href="#"  class="you llink ar">            فديوهات لشرح هذه الخدمات - باللغة العربية
 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -608,7 +693,7 @@
 
   
        </div>
-  
+       <br>
        <div class="cont">
         <h2> <span class="all_text">-</span> Box <span class="red">&</span> Dongle <span class="red">Activation</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check" viewBox="0 0 16 16">
          <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
@@ -623,8 +708,10 @@
 
 
 </div>
-  
-       
+
+
+       <br>
+
 
 
 
@@ -705,7 +792,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                           <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                         </svg>
-          <a href="#"  class="you llink">            فديوهات لشرح هذه الخدمات - باللغة العربية
+          <a href="#"  class="you llink ar">            فديوهات لشرح هذه الخدمات - باللغة العربية
   
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
               <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -720,9 +807,10 @@
       </div>
       <div class="img_di">
         <div class="owl-carousel owl-theme">
-          <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-          <div class="item "><img src="/ineed_unlock/img/img/1.png" alt=""></div>
-          <div class="item "></div>
+          <div class="item "><img src="/ineed_unlock/img/img/4.png" alt=""></div>
+          <div class="item "><img src="/ineed_unlock/img/img/4.png" alt=""></div>
+          <div class="item "><img src="/ineed_unlock/img/img/4.png" alt=""></div>
+
         </div>
       </div>   
       </section>
@@ -745,33 +833,31 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  <!-- Initialize Owl Carousel -->
   <script>
-   $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    center: true, // هنا تفعيل خاصية الـ center
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:1
-      },
-      1000:{
-        items:1
-      }
-    }
-  });
-});
-
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false, // تعيين nav إلى false لإخفاء أيقونات التنقل
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        center: true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
+        }
+      });
+    });
   </script>
-
+  
 
 </body>
 </html>
