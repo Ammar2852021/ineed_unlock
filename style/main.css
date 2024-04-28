@@ -74,6 +74,7 @@ h2,
 a,
 button {
   position: relative;
+  font-weight: normal;
 }
 
 
@@ -369,7 +370,7 @@ a {
 
 .block_text p {
   margin: 5px 0;
-  line-height: 1.5;
+  line-height: 2;
 
 }
 
@@ -410,7 +411,7 @@ a {
 .Line_red {
   border-left: 3px solid var(--color-all_text);
   padding-left: 10px;
-  font-size: x-large;
+  font-size: large;
 }
 
 p.you {
@@ -596,7 +597,23 @@ ul.ul_li ::marker {
 
 /* 00000000000000000000000000000000000 */
 
+.phone{
+  display: none;
+}
+.pc{
+  display: block;
+}
+
+
+
 @media screen and (max-width:767px) {
+  .phone{
+    display: block;
+  }
+  .pc{
+    display: none;
+  }
+  
   .menu a {
     font-size: 4vw;
     font-weight: 600;
@@ -976,7 +993,6 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   outline: none;
   overflow: hidden;
   font-size: 15px;
-  width: 100%;
   color: white;
 }
 
@@ -1035,6 +1051,10 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
     margin-top: 1vh;
     padding: 0 3%;
 }
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100% !important;
+}
 }
 
 @media screen and (max-width:767px) {
@@ -1048,18 +1068,43 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
 /*  */
 .g {
   color: #0079ff;
+  text-transform: lowercase;
+
 }
 
 .o {
   color: #ff3131;
+  text-transform: lowercase;
+
 }
 
 .O {
   color: orange;
+  text-transform: lowercase;
+
 }
 
+li.list.red {
+  font-size: larger;
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 130% !important;
+}
 .l {
   color: #099f57;
+  text-transform: lowercase;
+
+}
+.e{
+  text-transform: lowercase;
+
 }
 
 
@@ -1106,6 +1151,27 @@ ul.menu {
 
 
 @media screen and (max-width:767px) {
+
+  .you {
+
+    font-size: x-small;
+}
+
+  .list {
+
+    display: block;
+}
+li.list.red.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+ul.ul_li {
+  list-style-position: inside;
+  display: grid;
+  width: 100%;
+}
+
   .header_nav .menu-btn:checked~.menu {
     max-height: fit-content;
     height: 100vh;
@@ -1124,7 +1190,7 @@ ul.menu {
   header.header_nav {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
   }
 }
 
