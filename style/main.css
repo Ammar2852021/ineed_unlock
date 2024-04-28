@@ -1189,6 +1189,10 @@ body{
 
 @media screen and (max-width:767px) {
 
+  .line_hi{
+    line-height: 2 !important;
+  }
+
   .you {
 
     font-size: x-small;
@@ -1196,7 +1200,10 @@ body{
 
   .list {
 
-    display: block;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
 }
 li.list.red.flex {
   display: flex;
