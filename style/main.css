@@ -23,8 +23,7 @@ li.list.red {
   font-size: large;
   display: flex;
   align-items: center;
-  /* justify-content: start; */
-  gap: 10px;
+
 }
 
 
@@ -105,7 +104,7 @@ button {
   justify-content: center;
   align-items: center;
   font: 400 var(--font-size) Helvetica Neue, sans-serif;
-  background-color: var(--bg-color);
+  background-color: transparent;
   border-radius: 68px;
   cursor: pointer;
   padding: 6px 10px 6px 6px;
@@ -199,10 +198,8 @@ button {
 }
 
 .header_nav li a {
-  display: block;
   text-decoration: none;
-  color: black;
-  padding: 20px;
+  color: var(--color-sec);
 
 }
 
@@ -460,7 +457,6 @@ p.you {
   background: var(--color-sec);
   color: white;
   font-weight: normal;
-  font-size: xx-small;
 }
 
 .button_Continue svg {
@@ -500,13 +496,13 @@ ul.ul_li ::marker {
 
 /*  */
 .playstore-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid var(--color-sec);
-  border-radius: 10px;
+  border-radius: 5px;
   /* background-color: rgba(0, 0, 0, 1); */
-  padding: 10px;
+  padding:5px 10px;
   text-align: center;
   color: black;
   outline: 0;
@@ -538,9 +534,7 @@ ul.ul_li ::marker {
 }
 
 .text-1 {
-  margin-bottom: 0.25rem;
   font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-2 {
@@ -675,7 +669,7 @@ ul.ul_li ::marker {
 
     padding: 0;
     height: 100vh;
-    top: 10%;
+    top: 8%;
   }
 
   .header_nav li a {
@@ -1142,7 +1136,7 @@ li.list.red {
 
 
 .div {
-  width: 200px;
+padding: 55px;
   height: 10vh;
   background-image: url(/ineed_unlock/img/logo/1.png);
   background-size: contain;
@@ -1154,6 +1148,16 @@ li.list.red {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+
+
+ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 100px; */
+  width: 63%;
 }
 
 
@@ -1246,9 +1250,13 @@ height: 3px !important;
 
 
 @media screen and (max-width:767px) {
+  .Line_red img {
+    float: left;
+}
 
   .line_hi{
     line-height: 2 !important;
+    margin-top: 10vh;
   }
 
   .you {
@@ -1296,4 +1304,31 @@ ul.ul_li {
     align-items: center;
     justify-content: space-between;
   }
+  
+.button_Continue {
+  font-size: xx-small;
+}
+.div {
+  padding: 0 55px;}
+.header_nav .menu-btn:checked~.menu {
+  padding: 10px !important;
+display: block !important;
+}
+.loogo_link {
+  display: block;
+  text-align: center;
+}
+.loogo_link li {
+  padding: 10px;
+  margin: 0;
+}
+.loogo_link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 }
