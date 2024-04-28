@@ -295,7 +295,9 @@ button {
 
 
 
-
+  p.you {
+    font-size: small;
+}
 
   .header_nav .menu {
     clear: none;
@@ -1077,6 +1079,14 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   .hidden {
     padding: 10px;
   }
+  p.you {
+    font-size: small;
+}
+.color_b {
+  background: var(--color-sec);
+  color: white;
+  font-size: smaller;
+}
 }
 
 
@@ -1151,6 +1161,7 @@ li.list.red {
 
 .username {
   font-size: smaller;
+  color: black;
 }
 
 .notice-content {
