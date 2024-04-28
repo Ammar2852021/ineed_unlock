@@ -1082,9 +1082,7 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   p.you {
     font-size: small;
 }
-.color_x{
-  font-size: medium;
-}
+
 .color_b {
   background: var(--color-sec);
   color: white;
