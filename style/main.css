@@ -1183,6 +1183,9 @@ ul.menu {
   background-size: cover;
 }
 
+body{
+  overflow-x: hidden !important; 
+}
 
 @media screen and (max-width:767px) {
 
@@ -1193,7 +1196,8 @@ ul.menu {
 
   .list {
 
-    display: block;
+    display: flex;
+    align-items: center;
 }
 li.list.red.flex {
   display: flex;
