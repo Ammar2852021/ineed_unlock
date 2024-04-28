@@ -278,7 +278,7 @@ button {
 
 /* 48em = 768px */
 
-@media (min-width: 992px) {
+@media (min-width: 767px) {
 
 
 
@@ -596,7 +596,7 @@ ul.ul_li ::marker {
 
 /* 00000000000000000000000000000000000 */
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:767px) {
   .menu a {
     font-size: 4vw;
     font-weight: 600;
@@ -1028,9 +1028,16 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
 }
 
 
-
-
 @media screen and (max-width:992px) {
+  .hidden {
+    overflow: hidden;
+    position: relative;
+    margin-top: 1vh;
+    padding: 0 3%;
+}
+}
+
+@media screen and (max-width:767px) {
   .hidden {
     padding: 10px;
   }
@@ -1098,7 +1105,7 @@ ul.menu {
 }
 
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:767px) {
   .header_nav .menu-btn:checked~.menu {
     max-height: fit-content;
     height: 100vh;
