@@ -1255,8 +1255,9 @@ height: 3px !important;
 }
 
   .line_hi{
-    line-height: 2 !important;
+    line-height: 1.5 !important;
     margin-top: 10vh;
+    font-size: larger;
   }
 
   /* .you {
