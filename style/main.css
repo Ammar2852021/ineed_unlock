@@ -1374,3 +1374,20 @@ svg.bi.bi-patch-check {
 }
 
 }
+
+
+
+
+
+
+/* تطبيق تنسيقات CSS للشاشات الكبيرة */
+@media screen and (min-width: 1450px) {
+  section.home.line_hi .home_text h2{
+    font-size: 1.8rem;
+  }
+  .block_text p,.list {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+}
