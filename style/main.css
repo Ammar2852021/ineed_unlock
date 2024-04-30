@@ -15,7 +15,7 @@
 
 }
 
-svg.bi.bi-patch-check {
+svg.bi.bi-patch-check ,svg.bi.bi-shield-fill-check{
   width: 25px;
   height: 25px;
 }
@@ -1366,6 +1366,11 @@ body {
   font-size: 90.5%;
 
 
+}
+
+svg.bi.bi-patch-check {
+  width: 18px;
+  height:18px;
 }
 
 }
