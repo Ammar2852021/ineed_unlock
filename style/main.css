@@ -3,17 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: sans-serif;
-}
+  font-family: sans-serif;}
 
 
 
 :root {
   --color-sec: #050b30;
   --color-all_text: #ff5757;
-  --color-link: #ff914d;
-
-}
+  --color-link: #ff914d;}
 
 svg.bi.bi-patch-check,
 svg.bi.bi-shield-fill-check {
@@ -465,7 +462,19 @@ p.you {
 }
 
 
-/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
 .gap {
   gap: 10px;
 }
