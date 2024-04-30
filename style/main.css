@@ -15,7 +15,8 @@
 
 }
 
-svg.bi.bi-patch-check ,svg.bi.bi-shield-fill-check{
+svg.bi.bi-patch-check,
+svg.bi.bi-shield-fill-check {
   width: 25px;
   height: 25px;
 }
@@ -25,7 +26,7 @@ svg.bi.bi-patch-check ,svg.bi.bi-shield-fill-check{
   width: 120% !important;
 } */
 li.list.red {
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
   font-size: large;
   display: flex;
   align-items: center;
@@ -134,7 +135,7 @@ button {
   position: relative;
 }
 
-.lower{
+.lower {
   text-transform: lowercase;
 }
 
@@ -179,7 +180,7 @@ button {
   gap: 3px;
 }
 
-.Supported{
+.Supported {
   font-weight: normal;
 }
 
@@ -306,7 +307,7 @@ button {
 
   p.you {
     font-size: small;
-}
+  }
 
   .header_nav .menu {
     clear: none;
@@ -394,9 +395,9 @@ a {
   margin: 10px 0;
 }
 
-.titel_name{
+.titel_name {
   font-size: xx-large;
-    width: max-content;
+  width: max-content;
 }
 
 section.home.line_hi .home_text h2 {
@@ -532,7 +533,7 @@ ul.ul_li ::marker {
   border: 2px solid var(--color-sec);
   border-radius: 5px;
   /* background-color: rgba(0, 0, 0, 1); */
-  padding:5px 10px;
+  padding: 5px 10px;
   text-align: center;
   color: black;
   outline: 0;
@@ -609,8 +610,7 @@ ul.ul_li ::marker {
 
 
 
-/*  */
-/*  Discount*/
+
 
 .Discount {
   display: flex;
@@ -637,23 +637,25 @@ ul.ul_li ::marker {
 
 /* 00000000000000000000000000000000000 */
 
-.phone{
+.phone {
   display: none;
 }
-.pc{
+
+.pc {
   display: block;
 }
 
 
 
 @media screen and (max-width:767px) {
-  .phone{
+  .phone {
     display: block;
   }
-  .pc{
+
+  .pc {
     display: none;
   }
-  
+
   .menu a {
     font-size: 4vw;
     font-weight: 600;
@@ -1090,31 +1092,33 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
     position: relative;
     margin-top: 1vh;
     padding: 0 3%;
-}
-.block_text p {
-  margin: 5px 0;
-  line-height: 1 !important;
-}
+  }
 
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100% !important;
-}
+  .block_text p {
+    margin: 5px 0;
+    line-height: 1 !important;
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width:767px) {
   .hidden {
     padding: 10px;
   }
+
   p.you {
     font-size: small;
-}
+  }
 
-.color_b {
-  background: var(--color-sec);
-  color: white;
-  font-size: small;
-}
+  .color_b {
+    background: var(--color-sec);
+    color: white;
+    font-size: small;
+  }
 
 }
 
@@ -1162,14 +1166,15 @@ li.list.red {
   text-transform: lowercase;
 
 }
-.e{
+
+.e {
   text-transform: lowercase;
 
 }
 
 
 .div {
-padding: 55px;
+  padding: 55px;
   height: 10vh;
   background-image: url(/ineed_unlock/img/logo/1.png);
   background-size: contain;
@@ -1220,8 +1225,8 @@ ul.menu {
   background-size: cover;
 }
 
-body{
-  overflow-x: hidden !important; 
+body {
+  overflow-x: hidden !important;
 }
 
 
@@ -1243,36 +1248,37 @@ body{
 
 
 
-select{
+select {
   border: none;
 }
+
 ul.ul_li.block_text .list {
   display: list-item !important;
 }
 
 
-.mark{
+.mark {
   font-size: xx-large;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
-.ar{
+.ar {
   font-family: "Cairo", sans-serif !important;
 }
 
 
-.flex_line{
+.flex_line {
   display: flex;
   align-items: center;
 }
 
 
 
-.owl-theme .owl-dots .owl-dot span{
-  background: var(--color-all_text) !important; 
-width: 20px !important;
-height: 3px !important;
+.owl-theme .owl-dots .owl-dot span {
+  background: var(--color-all_text) !important;
+  width: 20px !important;
+  height: 3px !important;
 }
 
 
@@ -1285,9 +1291,9 @@ height: 3px !important;
 @media screen and (max-width:767px) {
   .Line_red img {
     float: left;
-}
+  }
 
-  .line_hi{
+  .line_hi {
     line-height: 1.5 !important;
     margin-top: 10vh;
     font-size: larger;
@@ -1304,19 +1310,20 @@ height: 3px !important;
     align-items: center;
     flex-wrap: wrap;
 
-}
+  }
 
 
-li.list.red.flex {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-ul.ul_li {
-  list-style-position: inside;
-  display: grid;
-  width: 100%;
-}
+  li.list.red.flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  ul.ul_li {
+    list-style-position: inside;
+    display: grid;
+    width: 100%;
+  }
 
   .header_nav .menu-btn:checked~.menu {
     max-height: fit-content;
@@ -1338,43 +1345,50 @@ ul.ul_li {
     align-items: center;
     justify-content: space-between;
   }
-  
-.button_Continue {
-  font-size: xx-small;
-}
-.div {
-  padding: 0 55px;}
-.header_nav .menu-btn:checked~.menu {
-  padding: 10px !important;
-display: block !important;
-}
-.loogo_link {
-  display: block;
-  text-align: center;
-}
-.loogo_link li {
-  padding: 10px;
-  margin: 0;
-}
-.loogo_link {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-body {
-  overflow-x: hidden;
-  font-size: 90.5%;
+
+  .button_Continue {
+    font-size: xx-small;
+  }
+
+  .div {
+    padding: 0 55px;
+  }
+
+  .header_nav .menu-btn:checked~.menu {
+    padding: 10px !important;
+    display: block !important;
+  }
+
+  .loogo_link {
+    display: block;
+    text-align: center;
+  }
+
+  .loogo_link li {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .loogo_link {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  body {
+    overflow-x: hidden;
+    font-size: 90.5%;
 
 
-}
+  }
 
-svg.bi.bi-patch-check {
-  width: 18px;
-  height:18px;
-}
+  svg.bi.bi-patch-check {
+    width: 18px;
+    height: 18px;
+  }
 
 }
 
@@ -1385,12 +1399,14 @@ svg.bi.bi-patch-check {
 
 /* تطبيق تنسيقات CSS للشاشات الكبيرة */
 @media screen and (min-width: 1450px) {
-  section.home.line_hi .home_text h2{
+  section.home.line_hi .home_text h2 {
     font-size: 1.8rem;
   }
-  .block_text p,.list {
+
+  .block_text p,
+  .list {
     margin: 5px 0;
     line-height: 1.2;
     font-size: 1.2rem;
-}
+  }
 }
