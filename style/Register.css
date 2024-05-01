@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+overflow-x: hidden;
+text-transform: capitalize !important;
+
+}
+
+
+:root {
+    --color-sec: #373c59;
+    --color-all_text: #ff5757;
+    --color-link: #ff914d;
+--bg--:#5f637a;
+
+}
+  
+.form{
+    width: 80%;
+}
+input#Email,input#password,input#Name ,input#phone{
+    margin-top: 1vh !important;
+}
+
+
+
+
+.right form label {
+    color: white;
+    font-size: large;
+}
+
+
+  svg.bi.bi-patch-check,
+  svg.bi.bi-shield-fill-check {
+    width: 25px;
+    height: 25px;
+  }
+
+  
+.logo{
+    width: 65%;
+    height: 10vh;
+    padding: 10px;
+    background-image: url(/ineed_unlock/img/logo/2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenar{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+
+p{
+    color: white;
+    line-height: 1.5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 10px;
+}
+
+
+.right,.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    background-image: url(../img/logo/Screenshot\ 2024-05-01\ 202340.png);
+    background-size: cover;
+}
+
+
+.left h2{
+    font-size:xx-large; 
+    color: white;
+font-weight: 900;
+
+}
+.red a{
+    color: var(--color-all_text);
+    text-decoration: none;
+}
+
+.right{
+    background: var(--color-sec);
+}
+
+
+
+.right form h2 {
+    font-size: xx-large; 
+    color: white;
+    font-weight: 800;
+
+}
+
+.right form label {
+    color: white;
+    font-size: large;
+}
+
+input[type="submit"]{
+    width: 50% !important;
+    background: var(--color-all_text);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login{
+    width: 80% !important;
+    background: var(--color-all_text);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px 0;
+    
+}
+.login a {
+color: white;
+}
+
+.line {
+    width: 40%;
+    height: 1vh;
+    background:white;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.block{
+    margin: 10px 0;
+}
+
+.right form input {
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.button_Continue {
+    display: flex;
+    padding: 5px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid #373c5930;
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+    border-radius: 30px;
+    background: var(--bg--);
+    color: white;
+    font-weight: normal;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.button_Continue svg {
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .contenar{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr  ;
+    }
+
+    .right,.left{
+      height: 100vh;
+    }
+}
+
+
+
+
+
+/* تطبيق تنسيقات CSS للشاشات الكبيرة */
+@media screen and (min-width: 1450px) {
+    section.home.line_hi .home_text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .block_text p,
+    .list {
+      margin: 5px 0;
+      line-height: 1.2;
+      font-size: 1.2rem;
+    }
+  
+    .button_Continue {
+      padding: 10px;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+      align-items: center;
+    
+      background: var(--color-sec);
+      color: white;
+      /* font-weight: normal; */
+      font-size: larger;
+  }
+
+  .login,input[type="submit"]{
+    padding: 15px;
+    font-size: x-large;
+  }
+  p{
+    font-size: x-large;
+  }
+  h2{
+    font-size: x-large;
+  }
+
+  .logo{
+    width: 80%;
+    height: 10vh;
+    padding: 10px;
+    background-image: url(/ineed_unlock/img/logo/2.png);
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form{
+    width: 80%;
+}
+input#Email,input#password {
+    padding: 15px;
+    margin-top: 1vh;
+}
+.right form label {
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
+  }

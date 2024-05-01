@@ -1299,6 +1299,23 @@ ul.ul_li.block_text .list {
 }
 
 
+.pos{
+  position: relative;
+}
+.user_link {
+  display: none;
+}
+
+.pos::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* يمكنك تعديل العرض حسب حجم الصورة */
+  height: 100px; /* يمكنك تعديل الارتفاع حسب حجم الصورة */
+  background-image: url('/ineed_unlock/img/icon png/Different.png'); /* استبدل path/to/your/image.jpg بمسار الصورة الخاص بك */
+  bottom: -100px; /* ضبط الارتفاع للصورة بحيث تكون أسفل العنصر */
+  left: 0;
+  background-repeat: no-repeat;
+}
 
 @media screen and (max-width:767px) {
   .Line_red img {
