@@ -500,7 +500,7 @@ p.you {
 }
 
 .button_Continue svg {
-  height: 20px;
+  height: 30px;
 }
 
 .button_Continue:hover {
@@ -1047,6 +1047,7 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   color: white;
   width: 100%;
   font-weight: bold;
+  width: 100%;
 }
 
 .icon {
