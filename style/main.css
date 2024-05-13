@@ -1565,6 +1565,19 @@ input::placeholder {
   font-size: xxx-large !important;
 }
 
+
+input:focus {
+  background-color: transparent;  /* تثبيت لون الخلفية عند التركيز */
+}
+
+
+
+input[type="submit"]:focus {
+  background: var(--color-all_text);
+}
+
+
+
 @media screen and (max-width:992px) {
   
   .unlock{
