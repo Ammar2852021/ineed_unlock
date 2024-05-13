@@ -1452,3 +1452,137 @@ ul.ul_li.block_text .list {
     font-size: larger;
 }
 }
+
+
+.withe{
+  background: white;
+}
+
+
+.unlock {
+  display: grid;
+  grid-template-columns: 1fr  1fr 1fr;
+  background: var(--color-sec);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.text_unlock .cont p {
+  font-size: small;
+}
+
+form {
+  margin: 4vh 30px;
+
+}
+
+.inpout_unlock input {
+  background: aliceblue;
+  border: none;
+  margin: 4vh 0;
+
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: block;
+  border-bottom: 3px solid var(--color-all_text);
+  color: white;
+  font-weight: 600;
+  width: 100%;
+}
+
+
+
+input[type="submit"]{
+  background: var(--color-all_text);
+  border-radius: 10px;
+  margin-top: 3vh;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mail_unlock h2 {
+  font-size: medium;
+}
+
+
+.mail_unlock a {
+  font-size: medium;
+  margin: 3vh 0;
+
+  color: white;
+}
+
+
+.mail_unlock .list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.mail_unlock .list svg {
+ fill: var(--color-all_text);
+}
+
+.text_unlock {
+  border-right: 3px solid var(--color-all_text);
+  margin-right: 20px;
+}
+
+ul.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+
+.hidden_{
+  margin-top: 1vh;
+  padding: 2% 18%;
+}
+
+.end_code{
+  margin-bottom: 5vh;
+}
+
+.text_unlock .cont h2 {
+  font-size: large;
+  display: block;
+  margin: 1vh 0;
+}
+
+
+input::placeholder {
+  color: white; /* يمكنك تغيير 'red' إلى أي لون تريده */
+}
+
+.titel_ineed {
+  font-size: xxx-large !important;
+}
+
+@media screen and (max-width:992px) {
+  
+  .unlock{
+    display: block;
+    border-radius: 0;
+  }
+
+  .hidden_{
+    padding: 2% 0;
+  }
+  .text_unlock{
+    border: none;
+  }
+  
+}
+
+
+.mail_unlock p {
+  margin-top: 1vh;
+  line-height: 1.5;
+}
