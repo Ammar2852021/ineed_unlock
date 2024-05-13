@@ -427,7 +427,7 @@ section.home.line_hi .home_text h2 {
 
 
 .red {
-  color: #ff3836;
+  color: #ff3836 !important;
 }
 
 .green {
@@ -1426,33 +1426,6 @@ ul.ul_li.block_text .list {
 
 
 
-/* تطبيق تنسيقات CSS للشاشات الكبيرة */
-@media screen and (min-width: 1450px) {
-  section.home.line_hi .home_text h2 {
-    font-size: 1.8rem;
-  }
-
-  .block_text p,
-  .list {
-    margin: 5px 0;
-    line-height: 1.2;
-    font-size: 1.2rem;
-  }
-
-  .button_Continue {
-    padding: 10px;
-    font-weight: 700;
-    text-align: center;
-    vertical-align: middle;
-    align-items: center;
-  
-    background: var(--color-sec);
-    color: white;
-    /* font-weight: normal; */
-    font-size: larger;
-}
-}
-
 
 .withe{
   background: white;
@@ -1630,3 +1603,35 @@ mobile 480
 
 
 */
+ul.footer li a{
+  color: black;
+}
+
+
+
+/* تطبيق تنسيقات CSS للشاشات الكبيرة */
+@media screen and (min-width: 1450px) {
+  section.home.line_hi .home_text h2 {
+    font-size: 1.8rem;
+  }
+
+  .block_text p,
+  .list {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-size: 1.2rem;
+  }
+
+  .button_Continue {
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+  
+    background: var(--color-sec);
+    color: white;
+    /* font-weight: normal; */
+    font-size: larger;
+}
+}
