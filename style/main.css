@@ -1407,13 +1407,9 @@ ul.ul_li.block_text .list {
 
   .loogo_link {
     display: block;
-    text-align: center;
   }
 
-  .loogo_link li {
-    padding: 10px;
-    margin: 0;
-  }
+
 
   .loogo_link {
     display: flex;
@@ -1732,6 +1728,50 @@ p.lower {
   position: sticky;
 }
 
+._Service{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul#menu2,ul#menu1 {
+  position: fixed;
+}
+
+
+._Service,.header_nav li a {
+
+  font-size: large !important;
+}
+
+ul#menu2, ul#menu1 {
+  position: fixed;
+  padding: 10px 30px;
+  background: #eee !important;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+.dropdownMenu li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0;
+}
+
+.dropdownMenu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+.dropdownMenu li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+
 
 @media screen and (max-width:767px) {
 
@@ -1769,4 +1809,35 @@ p.lower {
   ._svg_ {
 display: none;
   }
+
+  ul#menu2,ul#menu1 {
+    position: static;
+  }
+
+  .header_nav .menu-btn:checked~.menu ,._Service {
+    padding: 0;
+    display: block !important;
+    font-size: x-large;
 }
+.loogo_link {
+  display: block;
+  text-align: left;
+}
+.loogo_link li {
+  margin: 3vh;
+}
+
+.mapa{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+li.mapa a {
+  margin-top: 3vh;
+}
+ul#menu2, ul#menu1 {
+
+  margin: 10px 0;
+}
+}
+
+

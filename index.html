@@ -49,31 +49,27 @@
           <div class="loogo_link">
 
 
-            <li> <a href="#Home_One">
-                <div class="div"></div>
-              </a></li>
+           
             <li> <a href="#Home_One">home</a></li>
 
 
 
             <li>
-              <a href="#">
-                <select onchange="window.location=this.value;">
-                  <option value="">Service Price</option>
-                  <option value="https://google.com"> google</option>
-                </select>
-              </a>
+              <button onclick="toggleMenu('menu1')" class="_Service">Service Price </button>
+              <ul id="menu1" class="dropdownMenu">
+                  <li class="mapa"><a href="https://www.example.com"> Service Price</a></li>
+                  <li class="mapa"><a href="https://www.example.com"> Service Price</a></li>
+              </ul>
             </li>
 
             <li>
-              <a href="#">
-                <select onchange="window.location=this.value;">
-                  <option value="">lidrary tool</option>
-                  <option value="https://google.com"> google</option>
-                </select>
-              </a>
-
+              <button onclick="toggleMenu('menu2')" class="_Service">lidrary tool </button>
+              <ul id="menu2" class="dropdownMenu">
+                  <li class="mapa"><a href="https://www.example.com"> lidrary tool</a></li>
+                  <li class="mapa"><a href="https://www.example.com"> lidrary tool</a></li>
+              </ul>
             </li>
+
 
 
             <li> <a href="#Home_One">tutorials</a></li>
@@ -1214,6 +1210,19 @@
     });
   </script>
 
+
+<script>
+  function toggleMenu(menuId) {
+      var menu = document.getElementById(menuId);
+      var dropdowns = document.getElementsByClassName('dropdownMenu');
+      for (var i = 0; i < dropdowns.length; i++) {
+          if (dropdowns[i] !== menu) {
+              dropdowns[i].style.display = 'none';
+          }
+      }
+      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
 
 </body>
 
