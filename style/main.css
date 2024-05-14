@@ -1675,6 +1675,12 @@ ul.footer li a{
 
 
 
+body,html{
+  overflow-x: hidden;
+}
+
+
+
 .grid_tow{
   grid-template-columns: 1fr 1fr;
 }
