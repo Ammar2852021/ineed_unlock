@@ -1367,6 +1367,7 @@ ul.ul_li.block_text .list {
     list-style-position: inside;
     display: grid;
     width: 100%;
+    margin-top: 5vh;
   }
 
   .header_nav .menu-btn:checked~.menu {
@@ -1719,4 +1720,38 @@ html {
 
 p.lower {
   line-height: 1.3 !important;
+}
+
+
+
+
+@media screen and (max-width:767px) {
+  
+  .titel_ineed {
+    margin: 5vh 0;
+}
+
+.button_Continue {
+  font-size: small;
+  width: 100%;
+}
+.flex.gap {
+  flex-direction: column;
+}
+
+a.playstore-button {
+  width: 100%;
+}
+
+.Discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* height: 1vh; */
+  background-image: url(/ineed_unlock/img/disc.png);
+  background-position: center;
+  background-size: 160%;
+  background-repeat: no-repeat;
+}
 }
