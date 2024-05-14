@@ -3,14 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: sans-serif;}
+  font-family: sans-serif;
+}
 
 
 
 :root {
   --color-sec: #050b30;
   --color-all_text: #ff5757;
-  --color-link: #ff914d;}
+  --color-link: #ff914d;
+}
 
 svg.bi.bi-patch-check,
 svg.bi.bi-shield-fill-check {
@@ -51,6 +53,9 @@ body {
 
 }
 
+p.lower {
+  line-height: 1.3 !important;
+}
 
 
 
@@ -1099,6 +1104,11 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
 
 
 @media screen and (max-width:992px) {
+
+  .titel_name {
+    font-size: x-large;
+    width: auto;
+}
   .hidden {
     overflow: hidden;
     position: relative;
@@ -1299,9 +1309,10 @@ ul.ul_li.block_text .list {
 }
 
 
-.pos{
+.pos {
   position: relative;
 }
+
 .user_link {
   display: none;
 }
@@ -1309,10 +1320,14 @@ ul.ul_li.block_text .list {
 .pos::after {
   content: '';
   position: absolute;
-  width: 100%; /* يمكنك تعديل العرض حسب حجم الصورة */
-  height: 100px; /* يمكنك تعديل الارتفاع حسب حجم الصورة */
-  background-image: url('/ineed_unlock/img/icon png/Different.png'); /* استبدل path/to/your/image.jpg بمسار الصورة الخاص بك */
-  bottom: -100px; /* ضبط الارتفاع للصورة بحيث تكون أسفل العنصر */
+  width: 100%;
+  /* يمكنك تعديل العرض حسب حجم الصورة */
+  height: 100px;
+  /* يمكنك تعديل الارتفاع حسب حجم الصورة */
+  background-image: url('/ineed_unlock/img/icon png/Different.png');
+  /* استبدل path/to/your/image.jpg بمسار الصورة الخاص بك */
+  bottom: -100px;
+  /* ضبط الارتفاع للصورة بحيث تكون أسفل العنصر */
   left: 0;
   background-repeat: no-repeat;
 }
@@ -1324,7 +1339,7 @@ ul.ul_li.block_text .list {
 
   .line_hi {
     line-height: 1.5 !important;
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-size: larger;
   }
 
@@ -1427,14 +1442,14 @@ ul.ul_li.block_text .list {
 
 
 
-.withe{
+.withe {
   background: white;
 }
 
 
 .unlock {
   display: grid;
-  grid-template-columns: 1fr  1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background: var(--color-sec);
   padding: 0 20px;
   border-radius: 20px;
@@ -1500,7 +1515,7 @@ h2.Channel p {
 
 
 .mail_unlock .list svg {
- fill: var(--color-all_text);
+  fill: var(--color-all_text);
 }
 
 .text_unlock {
@@ -1517,12 +1532,12 @@ ul.footer {
 }
 
 
-.hidden_{
+.hidden_ {
   margin-top: 1vh;
   padding: 2% 18%;
 }
 
-.end_code{
+.end_code {
   margin-bottom: 5vh;
 }
 
@@ -1534,7 +1549,8 @@ ul.footer {
 
 
 input::placeholder {
-  color: white; /* يمكنك تغيير 'red' إلى أي لون تريده */
+  color: white;
+  /* يمكنك تغيير 'red' إلى أي لون تريده */
 }
 
 .titel_ineed {
@@ -1545,17 +1561,24 @@ input::placeholder {
   /* padding: 10px; */
   background-repeat: no-repeat;
   margin: 0 10px;
-  
+
 }
 
 .send-button {
-  background-color: #4CAF50; /* لون الخلفية */
-  color: white; /* لون النص */
-  padding: 8px 12px; /* الحشو */
-  border: none; /* بدون حدود */
-  border-radius: 4px; /* تقريب الزوايا */
-  cursor: pointer; /* تغيير مؤشر الفأرة */
-  font-size: 16px; /* حجم الخط */
+  background-color: #4CAF50;
+  /* لون الخلفية */
+  color: white;
+  /* لون النص */
+  padding: 8px 12px;
+  /* الحشو */
+  border: none;
+  /* بدون حدود */
+  border-radius: 4px;
+  /* تقريب الزوايا */
+  cursor: pointer;
+  /* تغيير مؤشر الفأرة */
+  font-size: 16px;
+  /* حجم الخط */
   background: var(--color-all_text);
   border-radius: 10px;
   margin-top: 3vh;
@@ -1567,7 +1590,8 @@ input::placeholder {
 
 
 input:focus {
-  background-color: transparent;  /* تثبيت لون الخلفية عند التركيز */
+  background-color: transparent;
+  /* تثبيت لون الخلفية عند التركيز */
 }
 
 
@@ -1579,29 +1603,33 @@ input[type="submit"]:focus {
 
 
 @media screen and (max-width:992px) {
-  
-  .unlock{
+
+  .unlock {
     display: block;
     border-radius: 0;
     padding-bottom: 10vh;
     padding-top: 5vh;
   }
-  form{
+
+  form {
     margin: 0;
   }
 
-  .hidden_{
+  .hidden_ {
     padding: 2% 0;
   }
-  .text_unlock{
+
+  .text_unlock {
     border: none;
   }
-  
+
 
   ul.footer {
 
-    font-size: xx-small;
-}
+    font-size: small;
+    display: block;
+    line-height: 2;
+    margin: 10px;  }
 }
 
 
@@ -1640,7 +1668,7 @@ mobile 480
 
 
 */
-ul.footer li a{
+ul.footer li a {
   color: black;
 }
 
@@ -1665,25 +1693,25 @@ ul.footer li a{
     text-align: center;
     vertical-align: middle;
     align-items: center;
-  
+
     background: var(--color-sec);
     color: white;
     /* font-weight: normal; */
     font-size: larger;
+  }
 }
-}
 
 
 
-body,html{
+body,
+html {
   width: 100vw;
-  
   overflow-x: hidden;
-
 }
 
 
 
-.grid_tow{
+.grid_tow {
   grid-template-columns: 1fr 1fr;
 }
+
