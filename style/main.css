@@ -1722,7 +1722,13 @@ p.lower {
   line-height: 1.3 !important;
 }
 
+._svg_ {
+  background: var(--color-sec);
 
+  margin-bottom: -90px;
+  z-index: -6;
+  position: sticky;
+}
 
 
 @media screen and (max-width:767px) {
@@ -1734,6 +1740,8 @@ p.lower {
 .button_Continue {
   font-size: small;
   width: 100%;
+  padding: 10px;
+
 }
 .flex.gap {
   flex-direction: column;
@@ -1754,4 +1762,14 @@ a.playstore-button {
   background-size: 160%;
   background-repeat: no-repeat;
 }
+
+._svg_ {
+  background: var(--color-sec);
+
+  margin-bottom: -30px;
+  z-index: -6;
+  position: sticky;
 }
+}
+
+
