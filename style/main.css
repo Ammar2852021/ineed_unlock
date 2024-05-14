@@ -312,8 +312,7 @@ button {
   }
 
   .header_nav .menu {
-    clear: none;
-    float: right;
+
     max-height: none;
   }
 
@@ -1209,7 +1208,7 @@ li.list.red {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 
@@ -1217,8 +1216,7 @@ ul.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 100px; */
-  width: 63%;
+
 }
 
 
@@ -1753,6 +1751,15 @@ ul#menu2, ul#menu1 {
 }
 
 
+._Service, .header_nav li a {
+  font-size: large !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
 .dropdownMenu li a {
   display: block;
   text-decoration: none;
@@ -1771,7 +1778,14 @@ ul#menu2, ul#menu1 {
   color: black;
 }
 
-
+.use_user{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pc {
+  display: none;
+}
 
 @media screen and (max-width:767px) {
 
@@ -1837,6 +1851,13 @@ li.mapa a {
 ul#menu2, ul#menu1 {
 
   margin: 10px 0;
+}
+.loogo_link {
+  display: flex;
+  align-items: start;
+}
+.none{
+  display: none;
 }
 }
 
