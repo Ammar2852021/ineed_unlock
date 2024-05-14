@@ -1767,10 +1767,6 @@ p.lower {
   }
 
   ._svg_ {
-    background: var(--color-sec);
-
-    margin-bottom: -30px;
-    z-index: -6;
-    position: sticky;
+display: none;
   }
 }
