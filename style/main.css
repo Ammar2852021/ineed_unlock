@@ -1436,10 +1436,15 @@ ul.ul_li.block_text .list {
   display: grid;
   grid-template-columns: 1fr  1fr 1fr;
   background: var(--color-sec);
-  padding: 20px;
+  padding: 0 20px;
   border-radius: 20px;
 }
 
+
+.mail_unlock {
+  margin: 5vh 0;
+  display: grid;
+}
 
 .text_unlock .cont p {
   font-size: small;
@@ -1468,13 +1473,7 @@ form {
 
 
 
-input[type="submit"]{
-  background: var(--color-all_text);
-  border-radius: 10px;
-  margin-top: 3vh;
-  width: 100%;
-  cursor: pointer;
-}
+
 
 .mail_unlock h2 {
   font-size: medium;
@@ -1483,11 +1482,15 @@ input[type="submit"]{
 
 .mail_unlock a {
   font-size: medium;
-  margin: 3vh 0;
+  margin: 1.5vh 0;
 
   color: white;
 }
 
+
+h2.Channel p {
+  font-size: smaller !important;
+}
 
 .mail_unlock .list {
   display: flex;
@@ -1535,8 +1538,32 @@ input::placeholder {
 }
 
 .titel_ineed {
-  font-size: xxx-large !important;
+  height: 18vh;
+  background-image: url(/ineed_unlock/img/logo_name.png);
+  background-size: contain;
+  background-position: center left;
+  /* padding: 10px; */
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  
 }
+
+.send-button {
+  background-color: #4CAF50; /* لون الخلفية */
+  color: white; /* لون النص */
+  padding: 8px 12px; /* الحشو */
+  border: none; /* بدون حدود */
+  border-radius: 4px; /* تقريب الزوايا */
+  cursor: pointer; /* تغيير مؤشر الفأرة */
+  font-size: 16px; /* حجم الخط */
+  background: var(--color-all_text);
+  border-radius: 10px;
+  margin-top: 3vh;
+  width: 100%;
+  cursor: pointer;
+}
+
+
 
 
 input:focus {
