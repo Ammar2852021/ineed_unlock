@@ -1672,3 +1672,9 @@ ul.footer li a{
     font-size: larger;
 }
 }
+
+
+
+body{
+  overflow-x: hidden;
+}
