@@ -1859,6 +1859,12 @@ ul#menu2, ul#menu1 {
 .none{
   display: none;
 }
+ul#menu2, ul#menu1 {
+
+  background: none !important;
+  /* border-radius: 5px; */
+  padding: 10px 0 !important;
+}
 }
 
 
