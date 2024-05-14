@@ -1108,7 +1108,8 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   .titel_name {
     font-size: x-large;
     width: auto;
-}
+  }
+
   .hidden {
     overflow: hidden;
     position: relative;
@@ -1630,7 +1631,8 @@ input[type="submit"]:focus {
     font-size: small;
     display: block;
     line-height: 2;
-    margin: 10px;  }
+    margin: 10px;
+  }
 }
 
 
@@ -1732,44 +1734,43 @@ p.lower {
 
 
 @media screen and (max-width:767px) {
-  
+
   .titel_ineed {
     margin: 5vh 0;
+  }
+
+  .button_Continue {
+    font-size: small;
+    width: 100%;
+    padding: 10px;
+
+  }
+
+  .flex.gap {
+    flex-direction: column;
+  }
+
+  a.playstore-button {
+    width: 100%;
+  }
+
+  .Discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* height: 1vh; */
+    background-image: url(/ineed_unlock/img/disc.png);
+    background-position: center;
+    background-size: 160%;
+    background-repeat: no-repeat;
+  }
+
+  ._svg_ {
+    background: var(--color-sec);
+
+    margin-bottom: -30px;
+    z-index: -6;
+    position: sticky;
+  }
 }
-
-.button_Continue {
-  font-size: small;
-  width: 100%;
-  padding: 10px;
-
-}
-.flex.gap {
-  flex-direction: column;
-}
-
-a.playstore-button {
-  width: 100%;
-}
-
-.Discount {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  /* height: 1vh; */
-  background-image: url(/ineed_unlock/img/disc.png);
-  background-position: center;
-  background-size: 160%;
-  background-repeat: no-repeat;
-}
-
-._svg_ {
-  background: var(--color-sec);
-
-  margin-bottom: -30px;
-  z-index: -6;
-  position: sticky;
-}
-}
-
-
