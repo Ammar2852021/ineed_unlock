@@ -1675,6 +1675,6 @@ ul.footer li a{
 
 
 
-body{
-  overflow-x: hidden;
+.grid_tow{
+  grid-template-columns: 1fr 1fr;
 }
