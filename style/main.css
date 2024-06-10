@@ -1831,7 +1831,7 @@ display: none;
   }
 
   .header_nav .menu-btn:checked~.menu ,._Service {
-    padding: 0;
+    padding: 0 !important;
     display: block !important;
     font-size: x-large;
 }
@@ -1909,4 +1909,5 @@ th:first-child {
 th:last-child {
   border-right: 3px solid transparent;
 }
+
 

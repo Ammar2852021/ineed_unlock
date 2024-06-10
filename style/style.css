@@ -2,7 +2,7 @@
 
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -134,11 +134,7 @@ body {
     list-style: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 .header {
     background-color: #1c2533;
@@ -326,7 +322,7 @@ body {
 }
 
 .balance_balance {
-    padding: 20px !important;
+    padding: 15px !important;
 }
 
 .balance .border {
@@ -463,9 +459,7 @@ a.order_History,
     font-size: x-large;
 }
 
-.balance.balance_balance p {
-    margin-bottom: 2vh;
-}
+
 
 @media screen and (max-width:767px) {
     .container {
@@ -538,8 +532,144 @@ li.none {
     column-gap: 5px;
 }
 
+@media screen and (max-width:992px) {
+    .nav_order ul,.nav_order{
+        display: block;
+    }
+    .balance.balance_balance p {
+        margin-bottom: 0;
+    }
+    ._you ul{
+        display: block;
+    }
+
+    /* قم بجعل الجدول يحتل 100% من عرض الشاشة */
+    table {
+        width: 100%;
+        border: none !important;
+    }
+    .all{
+        display: block;
+    }
+    /* إعادة تهيئة العناصر عند عرض شاشة صغير */
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        /* تهيئة الخلايا */
+        td { 
+            text-align: center;
+            padding: 8px;
+        }
+        
+        tr {
+            margin: 10px 0;
+        }
+        /* تهيئة العناوين */
+        th {
+            text-align: center;
+            padding: 8px;
+        }
+        tr, td, th {
+            border: 1px solid !important;
+            border-color: #9294a5;
+        }
+        tr td:first-child {
+            border-left: 1px solid #9294a5 !important;
+          }
+          
+          tr td:last-child {
+            border-right: 1px solid #9294a5 !important;
+          }
+          
+          
+          
+          th:first-child {
+            border-left: 1px solid #9294a5 !important;
+          }
+          
+          th:last-child {
+            border-right: 1px solid #9294a5 !important;
+          }
+          .username{
+            color: white !important;
+          }
+          .header_nav .menu-icon .navicon,.header_nav .menu-icon .navicon:before, .header_nav .menu-icon .navicon:after{
+            background: white !important;
+          }
+          .loogo_link{
+            background: var(--color-sec);
+          }
+          .header_nav .menu-btn:checked~.menu, ._Service{
+            padding: 0 !important;
+          }
+          .header_nav .menu-btn:checked~.menu{
+            padding: 0 !important;
+          }
+          ul.menu {
+            position: fixed;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            top: 7vh;
+        }
+        nav#nav_bar {
+            position: fixed !important;
+            top: 0;
+        }
+        .nav_order {
+            margin-top: 9vh;
+        }
+        .container{
+            padding: 5%;
+        }
+        .balance_balance {
+            display: block;
+            padding: 15px !important;
+            border-radius: 10px !important;
+            /* gap: 10px; */
+            font-size: large !important;
+        }
+        .videos,.chart-container{border-radius: 10px !important;}
+        .balance .border {
+            border-left: 1px solid !important;
+            border-right:1px solid !important;
+        }
+
+    }
+
+    
 
 
-/* @media screen and (min-width: 1450px) {
 
-} */
+
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    body, html ,.balance div h2,.videos h2{
+  
+        font-size: xx-large !important;
+    }
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+    .balance.balance_balance p {
+        font-size: xxx-large;
+    }
+    .loogo_link  li a ,.loogo_link  li button{
+        font-size: xx-large !important;
+    }
+    .chart-container {
+        padding: 30px;
+   
+    }
+    ._Service, .header_nav li a {
+        font-size: xx-large !important;
+      }
+}

@@ -30,9 +30,9 @@ let header = `
 
           
           
-            <li> <a href="#Home_One"><div class="img_logo"></div></a></li>
+            <li> <a href="/ineed_unlock/index.html"><div class="img_logo"></div></a></li>
 
-            <li> <a href="#Home_One">home</a></li>
+            <li> <a href/ineed_unlock/index.html">home</a></li>
 
 
 
@@ -58,7 +58,7 @@ let header = `
 
 
 
-            <li> <a href="#Home_One">tutorials</a></li>
+            <li> <a href="/ineed_unlock/pages/dashboard.html">tutorials</a></li>
 
 </div>
 
