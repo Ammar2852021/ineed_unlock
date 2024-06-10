@@ -28,7 +28,10 @@ let header = `
           <div class="loogo_link">
 
 
-           
+          
+          
+            <li> <a href="#Home_One"><div class="img_logo"></div></a></li>
+
             <li> <a href="#Home_One">home</a></li>
 
 
@@ -57,6 +60,7 @@ let header = `
 
             <li> <a href="#Home_One">tutorials</a></li>
 
+</div>
 
 <li class="none">
 
@@ -90,8 +94,7 @@ let header = `
         </div>
       </button>
     </a></li>
-</ul></li></div>
-
+</ul></li>
 
   </ul>
 

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: sans-serif;
+  font-family: "Cairo", sans-serif !important;
 }
 
 
@@ -1867,4 +1869,44 @@ ul#menu2, ul#menu1 {
 }
 }
 
+
+
+tr, td, th{
+    border: 3px solid;
+
+    border-color:#9294a5  ;
+}
+ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.img_logo {
+  width: 150px;
+  height: 100px;
+  background-image: url(/ineed_unlock/img/logo/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+tr td:first-child {
+  border-left: 3px solid transparent;
+}
+
+tr td:last-child {
+  border-right: 3px solid transparent;
+}
+
+
+
+th:first-child {
+  border-left: 3px solid transparent;
+}
+
+th:last-child {
+  border-right: 3px solid transparent;
+}
 
