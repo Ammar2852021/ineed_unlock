@@ -530,3 +530,16 @@ li.none {
     background-repeat: no-repeat;
     background-position: center;
   }
+  .nav_order ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+
+
+/* @media screen and (min-width: 1450px) {
+
+} */
