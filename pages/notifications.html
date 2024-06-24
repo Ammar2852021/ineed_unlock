@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="container" id="hid">
+        <div class="exit" id="exit">
+            *
+        </div>
+
+   <div class="one">
+    <h2>Login or Register First to complete your order</h2>
+    <div class="button-group">
+        <button class="login-btn ">
+<a href="#"><span style="color: #ffbd59;">Login</span> with</a>
+<div class="google"><img src="/ineed_unlock/img/97fe431ade3ae16a1bdc4f8c895bbc17.webp" alt=""></div>
+<div class="facebook"><img src="/ineed_unlock/img/9d3f77a2254eedc6bf301eeb2430dab7.webp" alt=""></div>
+        </button>
+        <button class="login-btn ">
+            <a href="#"> <span style="color: #38b6ff;">Register</span> with</a>
+            <div class="google"><img src="/ineed_unlock/img/97fe431ade3ae16a1bdc4f8c895bbc17.webp" alt=""></div>
+            <div class="facebook"><img src="/ineed_unlock/img/9d3f77a2254eedc6bf301eeb2430dab7.webp" alt=""></div>
+                    </button>
+    </div>
+ 
+    <p >Register now and Get <span class="register-info">$1</span> free</p>
+   </div>
+   <div class="tow">
+    
+   </div>
+    </div>
+
+</body>
+</html>
+
+
+
+<style>
+
+img {
+    width: 70%;
+    height: 100%;
+}
+
+
+.google,.facebook .img{
+    width: 100%;
+}
+
+.login-btn{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 30px;
+border: none;
+outline: none;
+background-color: rgba(255, 255, 255, 0.178);
+align-items: center;
+
+}
+
+.one{
+    border-right: 5px solid white;
+    padding-right:5%;
+}
+
+
+button.login-btn a{
+    font-size: 8vh;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.google {
+    border-left: 5px solid white;
+    border-right:5px solid white;
+    margin: 10px 0;
+}
+
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1e2244;
+    padding: 20px;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    gap: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+
+button img {
+    margin-right: 10px;
+}
+
+
+p{
+    font-size: xx-large;
+}
+
+.register-info {
+    color: #00c853;
+    font-size: xx-large;
+}
+
+
+.tow{
+    background-image: url(/ineed_unlock/img/Screenshot\ 2024-06-24\ 103052.png);
+    background-size: contain;
+    background-position: center;
+}
+.container{
+    position: relative;
+}
+
+.exit{
+    position: absolute;
+    right:  30px;
+    top: 25px;
+    background: white;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:992px) {
+    .container{
+        display: block;
+    }
+    *{
+        font-size: x-large !important;
+    }
+    img {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+}
+
+
+</style>
+
+
+<script>
+
+let exit = document.getElementById('exit');
+let hid = document.getElementById('hid');
+
+exit.addEventListener('click',function(){
+    hid.style.display='none'
+
+})
+
+
+
+</script>
